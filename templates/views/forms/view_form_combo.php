@@ -1,0 +1,2 @@
+<input type="radio" class="" id="<*<model>*>_<*<name>*>" name="<*<name>*>" value="<*<option>*>" @if(old('<*<name>*>',$<*<model>*>-><*<name>*> ?? "")=='<*<option>*>') checked  @endif>
+<label for="<*<model>*>_<*<name>*>"><*<option>*></label><br>

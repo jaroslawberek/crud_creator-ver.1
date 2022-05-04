@@ -1,0 +1,11 @@
+ <!Created CRUD: --<*<date_create>*>-->
+
+<div id="table-search-container" class="container position-relative crud-table-container" target-controller="<*<controller>*>" >
+ 
+    @isset($table_search_container)
+    {!!$table_search_container!!}
+    @endisset
+    @empty($table_search_container)
+    <script>searchTableCrud(page_addres + "<*<controller>*>?ajax_search=1", null, "body");</script>   
+    @endempty  
+</div>

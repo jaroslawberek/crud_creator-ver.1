@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable + Sortable</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  ul { list-style-type: none; margin: 0; padding: 0; margin-bottom: 10px; }
+  li { margin: 5px; padding: 5px; width: 150px; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".sortable" ).sortable({
+      revert: true
+    });
+    $( ".draggable" ).draggable({
+      connectToSortable: ".sortable",
+     // helper: "clone",
+      revert: "invalid"
+    });
+    $( "span, div" ).disableSelection();
+  } );
+  </script>
+</head>
+<body>
+ 
+    <span class="draggable" >
+        <input type="text" id="i1" name="jakas1"  class="">
+        <label for="i2">Jakas2</label>
+    </span>
+   
+  
+
+<div class="sortable" style="width: 100%; min-height: 30px; border: 1px solid black" id="1"></div>
+<div class="sortable" style="width: 100%; min-height: 30px; border: 1px solid black" id="2"></div>
+<div class="sortable" style="width: 100%; min-height: 30px; border: 1px solid black" id="3"></div>
+ 
+ 
+ 
+ 
+</div>
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,1 @@
+ <option value="<*<option>*>" {{ old('<*<name>*>',$<*<model>*>-><*<name>*> ?? "") == '<*<option>*>' ? "selected" :""}}    ><*<option_label>*></option> 
